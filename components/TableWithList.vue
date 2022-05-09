@@ -46,21 +46,6 @@
 <script>
 import Loader from "@/components/UI/Loader";
 export default {
-  data:()=>({
-    headers:[
-      {
-        text: '№',
-        align: 'start',
-        sortable: false,
-        value: 'id',
-      },
-      { text: 'МНН', value: 'MNN' },
-      { text: 'ТН', value: 'TN' },
-      { text: 'ЖНВ ЛП', value: 'Количество' },
-      { text: 'Цена', value: 'Цена' },
-      { text: 'Затраты', value: 'expenses'},
-    ],
-  }),
   name: "TableWithList",
   props:['filteredVenList'],
   components:{Loader}
