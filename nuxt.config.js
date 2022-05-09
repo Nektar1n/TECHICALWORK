@@ -38,6 +38,26 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: "AIzaSyAIpn-wnqLWG7hE78rjCN5PeLGOREEzR20",
+          authDomain: "technicalwork-2936e.firebaseapp.com",
+          databaseURL: "https://technicalwork-2936e-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "technicalwork-2936e",
+          storageBucket: "technicalwork-2936e.appspot.com",
+          messagingSenderId: "501589285215",
+          appId: "1:501589285215:web:bfccfb0310b62d57b5feea",
+          measurementId: "G-DXY79PB3NM"
+        },
+        services: {
+          auth: true, // Just as example. Can be any other service.
+          database: true
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

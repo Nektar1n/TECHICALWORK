@@ -55,16 +55,12 @@ export default {
       fixed: false,
       items: [
         {
-          title: 'Первое',
+          title: 'Основная таблица',
           to: '/'
         },
         {
-          title: 'Второе',
-          to: '/inspire'
-        },
-        {
-          title: 'Третье',
-          to:''
+          title: 'База данных',
+          to: 'database'
         }
       ],
       miniVariant: false,
