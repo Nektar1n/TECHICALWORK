@@ -68,7 +68,7 @@ export default {
         },
       ],
       miniVariant: false,
-      title: 'Выберете задание'
+      title: 'Выберите задание'
     }
   }
 }
