@@ -42,7 +42,7 @@ import TableLoader from "@/components/UI/TableLoader";
 export default {
   components: {TableLoader},
   mounted() {
-    this.medicalData=this.$store.getters["tablexlsx/medData"]
+    this.medicalData=JSON.parse(JSON.stringify(this.$store.getters["tablexlsx/medData"]))
 
     this.medicalData.totalNumber=0
     this.medicalData.totalPrice=0

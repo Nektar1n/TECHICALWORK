@@ -59,9 +59,13 @@ export default {
           to: '/'
         },
         {
+          title: 'Уникальный МНН',
+          to:'uniquemnn'
+        },
+        {
           title: 'База данных',
           to: 'database'
-        }
+        },
       ],
       miniVariant: false,
       title: 'Выберете задание'

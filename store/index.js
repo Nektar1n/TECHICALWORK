@@ -5,12 +5,14 @@ export const actions={
   nuxtServerInit({commit}){
     console.log('**************server init*******************')
     let workSheets={}
+
     try{
       const data=XLSX.readFile('test_data.xlsx')
       for (const sheetName of data.SheetNames){
         workSheets[sheetName]=XLSX.utils.sheet_to_json(data.Sheets[sheetName])
       }
-      commit('tablexlsx/setDataMedications', workSheets.данные)
+      const dataMedications=workSheets.данные
+      commit('tablexlsx/setDataMedications', dataMedications)
     }catch (e) {
       throw e
     }
